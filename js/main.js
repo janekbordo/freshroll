@@ -33,7 +33,7 @@ function addScrolledClass() {
 
 function myMap() {
     map = new google.maps.Map(document.getElementById('restaurant-map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: 52.2311562, lng: 20.974946},
         zoom: 8
     });
 
