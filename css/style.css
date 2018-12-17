@@ -46,7 +46,7 @@ section {
 
 #main-header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/_10A2183.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/10A2183.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
