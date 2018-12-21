@@ -32,20 +32,46 @@ function addScrolledClass() {
 }
 
 function myMap() {
+
+    var myLatLng = {lat: 52.227788, lng: 21.004985};
     map = new google.maps.Map(document.getElementById('restaurant-map'), {
-        center: {lat: 52.2311562, lng: 20.974946},
-        zoom: 8
+        center: myLatLng,
+        zoom: 16
     });
 
+    var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map
+      });
+
+    marker.setMap(map);
+    
+    var myLatLng2 = {lat: 52.155812, lng: 21.034600};
     map2 = new google.maps.Map(document.getElementById('stoisko1-map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: myLatLng2,
+        zoom: 16
     });
 
+    var marker2 = new google.maps.Marker({
+        position: myLatLng2,
+        map: map2
+      });
+
+      marker2.setMap(map2);
+      
+
+    var myLatLng3 = {lat: 52.171537, lng: 20.934674};
     map3 = new google.maps.Map(document.getElementById('stoisko2-map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        center: myLatLng3,
+        zoom: 16
     });
+
+    var marker3 = new google.maps.Marker({
+        position: myLatLng3,
+        map: map3
+      });
+
+      marker3.setMap(map3);
   }
 
 function hideStoiska() {
@@ -107,5 +133,10 @@ function hideRestaurant() {
         stoiskaBtn.style.color = '#d80e0e';
         stoiskaBtn.style.fontWeight = 'bold';
     })
-    
 }
+    /**activate nav links */
+
+$('.navbar-nav .nav-item .nav-link').click(function () {
+    $('.navbar-nav .nav-item .nav-link').removeClass('activelink');
+    $(this).addClass('activelink')
+})
