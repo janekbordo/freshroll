@@ -1,14 +1,18 @@
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-weight: lighter;
     color: #fff;
 }
 
 .row span {
     font-size: 18px;
+    text-transform: lowercase;
+    font-style: italic;
 }
 
 #main-nav {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-weight: lighter;
     color: #fff;
 }
 
@@ -37,14 +41,14 @@ body {
 }
 
 #main-nav a.activenav {
-    color: #d80e0e;
+    color: #ee2c2c;
     text-decoration: underline;
 }
 
 
 #navbarNav {
     justify-content: flex-end;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Kalam', cursive;
     font-size: 20px;
 
 }
@@ -97,20 +101,37 @@ section {
 }
 
 #main-nav .nav-link:hover {
-    color: #d80e0e;
+    color: #ee2c2c;
 }
 
 #main-nav .nav-link:active {
-    color: #d80e0e;
+    color: #ee2c2c;
+}
+
+@media all and (max-width: 991px) {
+    #main-nav .nav-link {
+        color: #ee2c2c;
+    }
+    #main-nav .nav-link:hover {
+        color: #fff;
+    }
+    #main-nav .nav-link:active {
+        color: #fff;
+    }
+
+    #main-nav .nav-link.activelink {
+        color: #fff;
+        text-decoration: underline;
+    }
 }
 
 #main-nav .nav-link.activelink {
-    color: #d80e0e;
+    color: #ee2c2c;
     text-decoration: underline;
 }
 
 .navbar a.navbar-brand i:hover {
-    color: #d80e0e;
+    color: #ee2c2c;
     transition-duration: 0.3s;
 
 }
@@ -124,9 +145,13 @@ button,
     text-transform: uppercase;
 }
 
+.btn.btn-custom {
+    border: 1px solid #fff;
+}
+
 button:hover,
 #btn:hover {
-    background-color: #d80e0e;
+    background-color: #ee2c2c;
 }
 
 /*scroll*/
@@ -138,22 +163,27 @@ button:hover,
 /*section menu */
 
 #menu {
-    color: #000;
+    background: #000;
+    color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     text-align: center;
     padding-bottom: 10px;
+    color:#fff;
+}
+
+#menu .container {
+    color: #fff;
 }
 
 .container h3 {
     text-transform: lowercase;
     font-weight: bold;
-    text-decoration: underline;
-    color: #d80e0e;
+    color: #ee2c2c;
     font-family: 'Major Mono Display', monospace;
-    font-size: 30px;
+    font-size: 40px;
     
 }
 
@@ -164,6 +194,7 @@ button:hover,
 #menu .container .row {
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 #menu .container h5 {
@@ -188,18 +219,20 @@ button:hover,
 
 #menu .container .row .col-lg-4 i:hover {
     transform: rotate(360deg);
-    background-color: #d80e0e;
-    border-color: #d80e0e;
+    background-color: #ee2c2c;
+    border-color: #ee2c2c;
     transition-duration: 0.5s;
 }
 
 #menu .container p {
-    font-family: 'Raleway', sans-serif;
-    color: #000;
+    font-family: 'Kalam', cursive;
+    color: #fff;
+    text-align: left;
 }
 
 #menu .container .row h5 {
     margin-top: 20px;
+    color: #fff;
 }
 
 #menu .col-lg-6 .menu-item {
@@ -207,14 +240,18 @@ button:hover,
     justify-content: space-between;
     font-size: 26px;
     height: 40px;
+    color: #fff;
 }
 
-#menu .col-lg-6 .menu-item .menu-item-name {
+#menu .col-lg-6 .item .menu-item .menu-item-name {
     text-align: left;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.menu-item-description {
+#menu .item .menu-item p.menu-item-description {
     text-align: left;
+    color: #fff;
 }
 
 .gallery img {
@@ -240,22 +277,28 @@ button:hover,
     margin-left: 20px; 
     margin-right: 20px;
     cursor: pointer;
+    color: #fff;
 }
 
 .menu-location li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size : 20px;
     text-transform: uppercase;
 }
 
 .menu-location li a:hover {
-    color: #d80e0e;
+    color: #ee2c2c;
 }
 
 .menu-location .menu-location-item .location-link.active {
     font-weight: bold;
-    color: #d80e0e;
+    color: #ee2c2c;
+}
+
+#menu p.choose{
+    font-style: italic;
+    text-align: center;
 }
 
 @media all and (max-width:394px) {
@@ -272,8 +315,8 @@ button:hover,
 /*delivery*/
 
 #delivery {
-    background-color: #f7f7f7;
-    color: #000;
+    background-color: #000;
+    color: #fff;
 }
 
 #delivery .content {
@@ -327,7 +370,8 @@ button:hover,
 /*CATERING*/
 
 #catering {
-    color: #000;
+    background-color: #000;
+    color: #fff;
     padding-bottom: 0;
 }
 
@@ -340,7 +384,7 @@ button:hover,
 /*LOCATION*/
 
 #location {
-    color: #000;
+    background-color: #000;
 }
 
 #location .container .row .col-lg-4 {
@@ -368,6 +412,7 @@ button:hover,
 .stoiska-location {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 40px;
 }
 
 /*CONTACT*/
@@ -399,7 +444,7 @@ button:hover,
 }
 
 #contact .container form .form-row .col-lg-12 button .btn-custom:hover {
-    background-color: #d80e0e;
+    background-color: #ee2c2c;
     transition-duration: 0.6s;
 }
 
@@ -431,15 +476,15 @@ button:hover,
     height: 50px;
     width: 50px;
     font-size: 30px;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
 }
 
 #contact .container .team-sm-icons a i:hover {
-    background-color: #d80e0e;
+    background-color: #ee2c2c;
     transition: all 0.5s;
 }
 
@@ -451,7 +496,7 @@ button:hover,
 }
 
 #main-footer .container .row .col-lg-4.nav-footer ul li a:hover{
-    color:#d80e0e;
+    color:#ee2c2c;
     text-decoration: none;
 }
 

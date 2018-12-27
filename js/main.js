@@ -3,6 +3,7 @@ $(document).ready(function () {
     hideStoiska();
     hideRestaurant();
     myMap();
+    checkRODO();
 
     var restaurant = document.querySelectorAll('.restaurant');
     var restaurantTitles = document.querySelectorAll('.restaurant-title');
@@ -97,9 +98,9 @@ function hideStoiska() {
             restaurantTitles[l].style.display="";
         }
 
-        stoiskaBtn.style.color = '#000';
+        stoiskaBtn.style.color = '#fff';
         stoiskaBtn.style.fontWeight = 'normal';
-        restaurantBtn.style.color = '#d80e0e';
+        restaurantBtn.style.color = '#ee2c2c';
         restaurantBtn.style.fontWeight = 'bold';
         
     })
@@ -128,9 +129,9 @@ function hideRestaurant() {
             restaurantTitles[l].style.display="none";
         }
 
-        restaurantBtn.style.color = '#000';
+        restaurantBtn.style.color = '#fff';
         restaurantBtn.style.fontWeight = 'normal';
-        stoiskaBtn.style.color = '#d80e0e';
+        stoiskaBtn.style.color = '#ee2c2c';
         stoiskaBtn.style.fontWeight = 'bold';
     })
 }
@@ -140,3 +141,21 @@ $('.navbar-nav .nav-item .nav-link').click(function () {
     $('.navbar-nav .nav-item .nav-link').removeClass('activelink');
     $(this).addClass('activelink')
 })
+
+function checkRODO() {
+    var sendBtn = document.querySelector('.btn.btn-custom');
+    var allowCheck = document.querySelector('.rodo-check');
+
+    allowCheck.addEventListener('click', function() {
+        if (allowCheck.checked === true) {
+            sendBtn.style.display = "inherit";
+            sendBtn.style.marginRight = "auto";
+            sendBtn.style.marginLeft = "auto";
+
+        } else {
+            sendBtn.style.display = "none";
+        }
+    })
+
+    
+}
