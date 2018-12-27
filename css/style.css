@@ -13,6 +13,7 @@ body {
 #main-nav {
     font-family: 'Kalam', cursive;
     font-weight: lighter;
+    text-transform: uppercase;
     color: #fff;
 }
 
@@ -49,7 +50,7 @@ body {
 #navbarNav {
     justify-content: flex-end;
     font-family: 'Kalam', cursive;
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
@@ -179,10 +180,10 @@ button:hover,
 }
 
 .container h3 {
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-weight: bold;
     color: #ee2c2c;
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Kalam', cursive;
     font-size: 40px;
     
 }
@@ -198,7 +199,8 @@ button:hover,
 }
 
 #menu .container h5 {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Kalam', cursive;
+    text-transform: uppercase;
 }
 
 #menu .container h6 {
@@ -226,13 +228,14 @@ button:hover,
 
 #menu .container p {
     font-family: 'Kalam', cursive;
-    color: #fff;
+    color: lightslategray;
     text-align: left;
 }
 
 #menu .container .row h5 {
     margin-top: 20px;
     color: #fff;
+    text-transform: uppercase;
 }
 
 #menu .col-lg-6 .menu-item {
@@ -251,7 +254,7 @@ button:hover,
 
 #menu .item .menu-item p.menu-item-description {
     text-align: left;
-    color: #fff;
+    color: lightgrey;
 }
 
 .gallery img {
@@ -413,6 +416,11 @@ button:hover,
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+}
+
+.container.google-map h6,
+.container.google-map p {
+    color:lightslategray;
 }
 
 /*CONTACT*/
