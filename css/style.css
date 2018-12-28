@@ -34,6 +34,8 @@ body {
 .row.catering-pic img {
     margin-right: auto;
     margin-left: auto;
+    height: 70%;
+    width: 70%; 
 }
 
 #main-nav a {
@@ -60,7 +62,7 @@ section {
 }
 
 .container h5{
-    font-size: 30px;
+    font-size: 28px;
 }
 
 /*header*/
@@ -304,6 +306,20 @@ button:hover,
     text-align: center;
 }
 
+#menu .row .col-lg-6 .item {
+    width: 90%;
+}
+
+.contact-form {
+    margin-bottom: 40px;
+}
+
+#contact .container form .form-row.agreement {
+    margin-top: 0;
+}
+#contact .container form .form-row:last-of-type {
+    margin-top: 0;
+}
 @media all and (max-width:394px) {
     .row.restaurant.box .menu-item-description,
     .row.stoisko.box .menu-item-description {
@@ -363,7 +379,6 @@ button:hover,
 #delivery .delivery-pic {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
 }
 
 #delivery .col-lg-6:first-of-type {
@@ -382,6 +397,15 @@ button:hover,
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#catering .offer {
+    font-size: 28px;
+}
+
+#catering .row .col-lg-12,
+#catering footer {
+    font-size: 22px;
 }
 
 /*LOCATION*/
@@ -411,16 +435,22 @@ button:hover,
     height: 250px;
 }
 
-.restaurant-location,
-.stoiska-location {
+.container .restaurant-location,
+.container .stoiska-location {
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    font-size: 35px;
 }
 
 .container.google-map h6,
 .container.google-map p {
     color:lightslategray;
+}
+
+.col-lg-6.justify-content-center.restaurant-address {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*CONTACT*/
