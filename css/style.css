@@ -56,12 +56,21 @@ body {
 
 }
 
-section {
+section#menu,
+section#contact,
+section#catering {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
+section#location {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .container h5{
+    margin-top: 40px;
+    margin-bottom: 0;
     font-size: 28px;
 }
 
@@ -202,7 +211,6 @@ button:hover,
 
 #menu .container h5 {
     font-family: 'Kalam', cursive;
-    text-transform: uppercase;
 }
 
 #menu .container h6 {
@@ -308,6 +316,7 @@ button:hover,
 
 #menu .row .col-lg-6 .item {
     width: 90%;
+    margin-top: 30px;
 }
 
 .contact-form {
@@ -383,6 +392,10 @@ button:hover,
 
 #delivery .col-lg-6:first-of-type {
     margin-bottom: 10px;
+}
+
+#delivery .container p {
+    font-size: 28px;
 }
 
 /*CATERING*/
