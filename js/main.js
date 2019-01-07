@@ -155,7 +155,9 @@ function checkRODO() {
         } else {
             sendBtn.style.display = "none";
         }
-    })
-
-    
+    })   
 }
+
+$('.navbar-nav a').click(function(){
+    $('.navbar-collapse').collapse('hide');
+});

@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- icon -->
-    <link rel="shortcut icon" href="../freshroll/img/logo.png">
+    <link rel="shortcut icon" href="./img/logo.png">
     <!--    fonts-->
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
@@ -115,7 +115,7 @@
                                     <p class="menu-item-name">Krewetka w tempurze</p>
                                     <p class="price">15,-</p>     
                             </div>
-                            <p class="menu-item-description">
+                            <p class="menu-item-description shrimp">
                                 glony nori, ryż, krewetka w tempurze, sałata, mango, ogórek, majonez
                             </p>
                     </div>
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="stoisko-title"><b>ZESTAWY LUNCHOWE</b></h5>
+            <h5 class="stoisko-title"><b>ZESTAWY</b></h5>
             <div class="row stoisko">
                 <div class="col-lg-6">
                     <div class="item">
@@ -395,7 +395,7 @@
                                 <p class="menu-item-name">Krewetka w tempurze</p>
                                 <p class="price">15,-</p>
                             </div>
-                            <p class="menu-item-description">
+                            <p class="menu-item-description shrimp">
                                 glony nori, ryż, krewetka w tempurze, sałata, mango, ogórek, sos samuraj
                             </p>
                         </div>
@@ -411,7 +411,7 @@
                         <div class="item">
                             <div class="menu-item">
                                 <p class="menu-item-name">Kurczak w tempurze</p>
-                                <p class="price">16,-</p>
+                                <p class="price">13,-</p>
                             </div>
                             <p class="menu-item-description">
                                 glony nori, ryż, kurczak w tempurze, sałata, ogórek, papryka, sos samuraj
@@ -857,7 +857,7 @@
                 </p>
             </footer>
             <div class="row catering-pic">
-                <img src="../freshroll/img/catering.JPG" alt="catering">
+                <img src="./img/catering.jpg" alt="catering">
             </div>
         </div>
     </section>
@@ -896,16 +896,16 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6 justify-content-center map-viewer" id="stoisko1-map"></div>
-                    <div class="col-lg-6 justify-content-center">
+                    <div class="col-lg-6 justify-content-center stoisko-address">
                         <h5>GALERIA METRO BIS</h5>
                         <h6>stoisko handlowe przy wejściu do Biedronki</h6>
                         <p class="point-address">
-                            al. KEN 85</br>
+                            Al. KEN 85</br>
                             02-777 Warszawa</br>
                         </br>
                             godziny otwarcia:</br>
                             pon.-pt. 9.30 - 20:30</br>
-                            sob. 9:30 - 22:00
+                            sob. 9:30 - 20:00
                         </p>
                     </div>
                 </div>
@@ -913,16 +913,16 @@
             <div class="container google-map"> 
                 <div class="row">
                     <div class="col-lg-6 justify-content-center map-viewer" id="stoisko2-map"></div>
-                    <div class="col-lg-6 justify-content-center">
+                    <div class="col-lg-6 justify-content-center stoisko-address">
                         <h5>AUCHAN OKĘCIE</h5>
                         <h6>stoisko handlowe przy kasach Auchan</h6>
                         <p class="point-address">
-                            al. Krakowska 81</br>
+                            Al. Krakowska 81</br>
                             02-182 Warszawa</br>
                         </br>
                             godziny otwarcia:</br>
-                            pon.-sob. 9.30 - 21:00</br>
-                            niedz. 10:00 - 20:00
+                            pon.-sob. 9.30 - 21:30</br>
+                            niedz. 10:00 - 20:30
                         </p>
                     </div>
                 </div>
@@ -934,12 +934,12 @@
         <div class="container">
             <header>
                 <h3>Kontakt</h3>
-                <form class="contact-form" action="https://formspree.io/janek.bordo@gmail.com" method="post" enctype="multipart/form-data">
+                <form class="contact-form" action="./send_form_email.php" method="post">
                     <div class="form-row">
                         <div class="col-lg-6">
                             <input type="text" class="form-control input-custom" name="name" placeholder="Imię">
                             <input type="text" class="form-control input-custom" name= "mail" placeholder="adres e-mail">
-                            <input type="text" class="form-control input-custom" placeholder="numer telefonu">
+                            <input type="text" class="form-control input-custom" name="phone" placeholder="numer telefonu">
                         </div>
                         <div class="col-lg-6">
                             <textarea class="form-control" name="message" placeholder="Twoja wiadomość"></textarea>
@@ -956,7 +956,7 @@
                     </div>
                     <div class="form-row agreement">
                         <div class="col-lg-12">
-                            <a href="../freshroll/ZM-kluzula-informacyjna-o-przetwarzaniu-danych-osobowych.pdf" class="rodo-pdf" target="_blank">
+                            <a href="./ZM-kluzula-informacyjna-o-przetwarzaniu-danych-osobowych.pdf" class="rodo-pdf" target="_blank">
                                 Wyświetl treść zgody na przetwarzanie danych osobowych
                             </a>
                         </div>
@@ -968,7 +968,7 @@
                     </div>
                     
                 </form>
-                <p>
+                <p class="contact-footer">
                     e-mail : <a href="mailto:biuro@freshrollsushi.pl">biuro@freshrollsushi.pl</a></br>
                     tel. do restauracji: 507-535-607</br>
                     Możliwa płatność kartą.</br>
@@ -983,6 +983,7 @@
             </header>
         </div>
     </section>
+
     <footer id="main-footer">
         <div class="container">
             <div class="row">

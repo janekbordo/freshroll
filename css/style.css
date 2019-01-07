@@ -195,14 +195,17 @@ button:hover,
     font-weight: bold;
     color: #ee2c2c;
     font-family: 'Kalam', cursive;
-    font-size: 40px;
-    
+    font-size: 46px;
+    margin-bottom: 20px;
+
 }
 
-#menu > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(3) > p,
-#menu > div > div:nth-child(15) > div:nth-child(1) > div:nth-child(3) > p {
-    margin-top: 30px;
+@media all and (max-width: 400px) {
+    #menu .container .item .menu-item-description.shrimp {
+        margin-top: 30px;
+    }
 }
+
 #menu .container .row {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -386,8 +389,8 @@ button:hover,
 }
 
 #delivery .delivery-pic {
-    height: 100%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
 }
 
 #delivery .col-lg-6:first-of-type {
@@ -461,10 +464,21 @@ button:hover,
     color:lightslategray;
 }
 
-.col-lg-6.justify-content-center.restaurant-address {
+.col-lg-6.justify-content-center.restaurant-address,
+.col-lg-6.justify-content-center.stoisko-address {
     margin-top: auto;
     margin-bottom: auto;
 }
+
+.col-lg-6.justify-content-center.stoisko-address h5 {
+    margin-top: 0;
+}
+
+.col-lg-6.justify-content-center.stoisko-address .point-address {
+    margin-bottom: 0;
+}
+
+
 
 /*CONTACT*/
 
@@ -537,6 +551,10 @@ button:hover,
 #contact .container .team-sm-icons a i:hover {
     background-color: #ee2c2c;
     transition: all 0.5s;
+}
+
+#contact p.contact-footer {
+    font-size: 22px;
 }
 
 /*NAV FOOTER*/
